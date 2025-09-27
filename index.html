@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/icon.png" alt="Logo" class="nav-icon">
+            </div>
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle" id="nav-dropdown-toggle">
+                    <span class="nav-dropdown-text">Menu</span>
+                    <span class="nav-dropdown-arrow">▼</span>
+                </button>
+                <div class="nav-dropdown-menu" id="nav-dropdown-menu">
+                    <a href="#home" class="nav-dropdown-link">Home</a>
+                    <a href="#about" class="nav-dropdown-link">About</a>
+                    <a href="#services" class="nav-dropdown-link">Services</a>
+                    <a href="#portfolio" class="nav-dropdown-link">Work</a>
+                    <a href="#contact" class="nav-dropdown-link">Contact</a>
+                </div>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Spline 3D Viewer -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.71/build/spline-viewer.js"></script>
+    <spline-viewer url="https://prod.spline.design/L54KEn5g3eSfLMNX/scene.splinecode" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></spline-viewer>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Creative Design</h1>
+            <p>Innovative Solutions</p>
+            <div class="hero-cta">
+                <button class="btn-primary">View Work</button>
+                <button class="btn-secondary">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Passionate about creating exceptional digital experiences through innovative design and cutting-edge technology. I also love streaming and connecting with the gaming community!</p>
+                </div>
+
+                <div class="twitch-section">
+                    <h3>🎮 Featured Twitch Streamers</h3>
+                    <p>Check out these amazing streamers:</p>
+
+                    <div class="twitch-streamers">
+                        <div class="twitch-streamer">
+                            <div class="streamer-avatar">🌟</div>
+                            <div class="streamer-info">
+                                <h4>slarpss</h4>
+                                <p>Amazing gaming content and streams</p>
+                                <a href="https://www.twitch.tv/slarpss" target="_blank" class="twitch-btn">Follow</a>
+                            </div>
+                        </div>
+
+                        <div class="twitch-streamer">
+                            <div class="streamer-avatar">🐶</div>
+                            <div class="streamer-info">
+                                <h4>puppycam</h4>
+                                <p>Adorable puppy streams and fun content</p>
+                                <a href="https://www.twitch.tv/puppycam" target="_blank" class="twitch-btn">Follow</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats">
+                    <div class="stat">
+                        <h3>100+</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Clients</p>
+                    </div>
+                    <div class="stat">
+                        <h3>5+</h3>
+                        <p>Years</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Design</h3>
+                    <p>Creative visual solutions</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Development</h3>
+                    <p>Modern web applications</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile</h3>
+                    <p>Responsive experiences</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Optimization</h3>
+                    <p>Performance enhancement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Work</h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-overlay">
+                        <h4>Project One</h4>
+                        <p>Brand Identity</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-overlay">
+                        <h4>Project Two</h4>
+                        <p>Web Application</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-overlay">
+                        <h4>Project Three</h4>
+                        <p>Mobile App</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-overlay">
+                        <h4>Project Four</h4>
+                        <p>E-commerce</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Watch My Content</h2>
+            </div>
+            <div class="contact-content">
+                <div class="youtube-integration">
+                    <div class="youtube-header">
+                        <h3>🎥 WoofWoof Baby</h3>
+                        <p>Check out my latest videos and content!</p>
+                        <a href="https://www.youtube.com/@woofwoofbby" target="_blank" class="youtube-channel-btn">
+                            Visit Channel
+                        </a>
+                    </div>
+
+                    <div class="youtube-embed-container">
+                        <div class="youtube-channel-card">
+                            <iframe
+                                width="100%"
+                                height="315"
+                                src="https://www.youtube.com/embed?listType=user_uploads&list=woofwoofbby"
+                                title="WoofWoof Baby YouTube Channel"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="youtube-features">
+                        <div class="youtube-feature">
+                            <span class="feature-icon">📹</span>
+                            <h4>Latest Videos</h4>
+                            <p>Watch my newest content and tutorials</p>
+                        </div>
+                        <div class="youtube-feature">
+                            <span class="feature-icon">🔔</span>
+                            <h4>Subscribe</h4>
+                            <p>Get notified when I upload new videos</p>
+                        </div>
+                        <div class="youtube-feature">
+                            <span class="feature-icon">💬</span>
+                            <h4>Community</h4>
+                            <p>Join the discussion in the comments</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <h3>Get In Touch</h3>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Message" required></textarea>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="LinkedIn">💼</a>
+                <a href="#" aria-label="GitHub">📁</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@latest/examples/jsm/controls/OrbitControls.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
